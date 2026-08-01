@@ -1,0 +1,20 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Omni Olympiad logo">
+  <defs>
+    <linearGradient id="ring" x1="0" y1="0" x2="220" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2563EB"/>
+      <stop offset="0.5" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+    <linearGradient id="inner" x1="55" y1="55" x2="165" y2="165" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  <circle cx="110" cy="110" r="96" stroke="url(#ring)" stroke-width="12" fill="white"/>
+  <circle cx="110" cy="110" r="66" fill="url(#inner)"/>
+  <!-- Stylized O + graduation cap -->
+  <path d="M110 70 L150 90 L110 110 L70 90 Z" fill="white"/>
+  <path d="M110 110 L110 138" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="110" cy="142" r="7" fill="white"/>
+  <path d="M132 98 L132 116 Q132 128 110 128 Q88 128 88 116 L88 98" stroke="white" stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

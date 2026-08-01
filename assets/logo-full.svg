@@ -1,0 +1,21 @@
+<svg width="600" height="260" viewBox="0 0 600 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Omni Olympiad Brand Logo">
+  <!-- Symbol (Letter O) -->
+  <g transform="translate(20, 20)">
+    <circle cx="90" cy="90" r="82" stroke="#0B1120" stroke-width="9" fill="none"/>
+    <circle cx="90" cy="90" r="64" stroke="#0B1120" stroke-width="7" fill="none"/>
+    <circle cx="90" cy="90" r="48" fill="#0B1120"/>
+    <path d="M85 100 C80 94, 83 86, 90 84 C95 82, 100 86, 97 92 C94 97, 88 103, 85 100 Z" fill="#FFFFFF"/>
+    <circle cx="82" cy="102" r="3.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Text "mni" -->
+  <text x="210" y="98" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="82" font-weight="500" fill="#0B1120" letter-spacing="-1">mni</text>
+  
+  <!-- Text "lympiad" -->
+  <text x="204" y="172" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="82" font-weight="500" fill="#0B1120" letter-spacing="-1">lympiad</text>
+
+  <!-- Bottom Divider & Tagline -->
+  <line x1="40" y1="210" x2="160" y2="210" stroke="#0B1120" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="180" y="215" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="800" fill="#16A34A" letter-spacing="4">LEAD • EXCEL • PASS IT ON</text>
+  <line x1="485" y1="210" x2="560" y2="210" stroke="#0B1120" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

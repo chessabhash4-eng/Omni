@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Omni Olympiard — India's premier online Olympiad platform. Register for just ₹249 and challenge your mind across Maths, Science, English, GK and more." />
+  <title>Omni Olympiard</title>
+  <link rel="icon" href="assets/logo.jpg" type="image/jpeg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ============ PROGRESS BAR ============ -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ============ NAVBAR / TABS ============ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="brand" data-link>
+        <img src="assets/logo.jpg" alt="Omni Olympiad" class="brand-logo" />
+        <span class="brand-text">Omni<span class="brand-accent">Olympiad</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-item active" data-link>Home</a>
+        <a href="#about" class="nav-item" data-link>About</a>
+        <a href="#olympiads" class="nav-item" data-link>Olympiads</a>
+        <a href="#register" class="nav-item" data-link>Register</a>
+        <a href="#resources" class="nav-item" data-link>Resources</a>
+        <a href="#contact" class="nav-item" data-link>Contact</a>
+        <a href="https://wa.me/919905992881?text=Hi%20Omni%20Olympiad!%20I%20want%20to%20register%20for%20the%20Olympiad%20(%E2%82%B9249)."
+          target="_blank" rel="noopener" class="nav-cta">Register ₹249</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HOME / HERO ============ -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="blob blob-3"></span>
+      <span class="grid-overlay"></span>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="badge reveal">🏆 Registrations Now Open · 2026 Season</span>
+        <h1 class="hero-title reveal">
+          Ignite Your <span class="gradient-text">Genius</span>.<br />
+          Compete. Learn. <span class="gradient-text">Win.</span>
+        </h1>
+        <p class="hero-sub reveal">
+          Omni Olympiad is India's premier online Olympiad platform for curious minds.
+          Test your skills across Maths, Science, English, Reasoning &amp; General Knowledge —
+          all for a single registration of <strong>just ₹249</strong>.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="https://wa.me/919905992881?text=Hi%20Omni%20Olympiad!%20I%20want%20to%20register%20for%20the%20Olympiad%20(%E2%82%B9249)."
+            target="_blank" rel="noopener" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 01-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.42-8.24 8.42zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.48-1.38-1.73-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z" />
+            </svg>
+            Register on WhatsApp
+          </a>
+          <a href="#olympiads" class="btn btn-ghost" data-link>Explore Olympiads →</a>
+        </div>
+
+        <div class="hero-stats reveal">
+          <div class="stat"><span class="stat-num" data-count="50000">0</span><span class="stat-label">Students</span>
+          </div>
+          <div class="stat"><span class="stat-num" data-count="1200">0</span><span class="stat-label">Schools</span>
+          </div>
+          <div class="stat"><span class="stat-num" data-count="8">0</span><span class="stat-label">Subjects</span></div>
+          <div class="stat"><span class="stat-num" data-count="249" data-prefix="₹">0</span><span class="stat-label">One
+              Fee</span></div>
+        </div>
+      </div>
+
+      <div class="hero-card reveal" id="heroCard3d">
+        <div class="float-card card-medal">🥇 Rank #1</div>
+
+        <!-- NEW MAST HERO ANIMATION VISUAL -->
+        <div class="hero-visual-mast">
+          <div class="orbital-ring ring-outer"></div>
+          <div class="orbital-ring ring-mid"></div>
+          <div class="orbital-ring ring-inner"></div>
+          <div class="particle p1"></div>
+          <div class="particle p2"></div>
+          <div class="particle p3"></div>
+          <div class="particle p4"></div>
+          <div class="core-glow"></div>
+          <img src="assets/logo.jpg" alt="Omni Olympiad emblem" class="hero-emblem-mast" />
+        </div>
+
+        <div class="hero-card-body">
+          <h3>Season 2026 · Online</h3>
+          <p>Open to Classes 1–12 across India. Digital certificates, medals &amp; scholarships for toppers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Who We Are</span>
+        <h2>Learning that feels like an <span class="gradient-text">adventure</span></h2>
+        <p class="section-lead">Omni Olympiard was founded to make competitive learning accessible, affordable and
+          genuinely exciting for every student in India.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="feature-card reveal">
+          <div class="feature-ico ico-1">🎯</div>
+          <h3>Our Mission</h3>
+          <p>To nurture problem-solving and critical thinking by giving every child a fair, affordable stage to shine —
+            no matter their school or city.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-ico ico-2">🌟</div>
+          <h3>Our Vision</h3>
+          <p>A future where Olympiad-level learning is the norm, not a privilege — building a generation of confident,
+            curious achievers.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-ico ico-3">🤝</div>
+          <h3>Our Values</h3>
+          <p>Fairness, transparency and encouragement. We celebrate effort as much as excellence, and every participant
+            is recognised.</p>
+        </div>
+      </div>
+
+      <div class="about-highlight reveal">
+        <div class="highlight-item"><span class="hl-ico">✅</span>
+          <div><strong>100% Online</strong>
+            <p>Attempt from home on any device — phone, tablet or laptop.</p>
+          </div>
+        </div>
+        <div class="highlight-item"><span class="hl-ico">🏅</span>
+          <div><strong>Real Rewards</strong>
+            <p>Certificates, medals, trophies and scholarships for top ranks.</p>
+          </div>
+        </div>
+        <div class="highlight-item"><span class="hl-ico">📊</span>
+          <div><strong>Detailed Reports</strong>
+            <p>Personalised performance analysis after every Olympiad.</p>
+          </div>
+        </div>
+        <div class="highlight-item"><span class="hl-ico">💸</span>
+          <div><strong>One Low Fee</strong>
+            <p>Just ₹249 to register — no hidden charges, ever.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OLYMPIADS ============ -->
+  <section id="olympiads" class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Our Olympiads</span>
+        <h2>Pick your <span class="gradient-text">battlefield</span></h2>
+        <p class="section-lead">Eight subject Olympiads designed by educators, aligned to your school syllabus and
+          levelled by class.</p>
+      </div>
+
+      <div class="olympiad-grid">
+        <article class="oly-card reveal" style="--c:#2563EB">
+          <div class="oly-ico">🔢</div>
+          <h3>Mathematics</h3>
+          <p>Logic, arithmetic, geometry &amp; problem-solving puzzles that sharpen the mind.</p>
+          <span class="oly-tag">Classes 1–12</span>
+        </article>
+        <article class="oly-card reveal" style="--c:#16A34A">
+          <div class="oly-ico">🔬</div>
+          <h3>Science</h3>
+          <p>Physics, chemistry &amp; biology concepts brought to life through real scenarios.</p>
+          <span class="oly-tag">Classes 1–12</span>
+        </article>
+        <article class="oly-card reveal" style="--c:#DB2777">
+          <div class="oly-ico">📖</div>
+          <h3>English</h3>
+          <p>Grammar, comprehension, vocabulary &amp; creative language mastery.</p>
+          <span class="oly-tag">Classes 1–12</span>
+        </article>
+        <article class="oly-card reveal" style="--c:#F59E0B">
+          <div class="oly-ico">🌍</div>
+          <h3>General Knowledge</h3>
+          <p>Current affairs, history, geography &amp; the world around you.</p>
+          <span class="oly-tag">Classes 1–12</span>
+        </article>
+        <article class="oly-card reveal" style="--c:#7C3AED">
+          <div class="oly-ico">🧠</div>
+          <h3>Mental Ability</h3>
+          <p>Reasoning, patterns &amp; aptitude that build razor-sharp thinking.</p>
+          <span class="oly-tag">Classes 3–12</span>
+        </article>
+        <article class="oly-card reveal" style="--c:#0891B2">
+          <div class="oly-ico">💻</div>
+          <h3>Computer &amp; Cyber</h3>
+          <p>Coding logic, digital literacy &amp; internet safety fundamentals.</p>
+          <span class="oly-tag">Classes 3–12</span>
+        </article>
+        <article class="oly-card reveal" style="--c:#DC2626">
+          <div class="oly-ico">🎨</div>
+          <h3>Drawing &amp; Art</h3>
+          <p>Creativity, colour theory &amp; imagination for young artists.</p>
+          <span class="oly-tag">Classes 1–8</span>
+        </article>
+        <article class="oly-card reveal" style="--c:#059669">
+          <div class="oly-ico">🗣️</div>
+          <h3>Spell Bee</h3>
+          <p>Spelling, pronunciation &amp; word power championship.</p>
+          <span class="oly-tag">Classes 1–10</span>
+        </article>
+      </div>
+
+      <div class="timeline reveal">
+        <h3 class="timeline-title">How the Olympiad works</h3>
+        <div class="timeline-track">
+          <div class="tl-step"><span class="tl-dot">1</span>
+            <h4>Register</h4>
+            <p>Pay ₹249 &amp; message us on WhatsApp with your details.</p>
+          </div>
+          <div class="tl-step"><span class="tl-dot">2</span>
+            <h4>Get Access</h4>
+            <p>Receive your syllabus, sample papers &amp; exam link.</p>
+          </div>
+          <div class="tl-step"><span class="tl-dot">3</span>
+            <h4>Compete</h4>
+            <p>Attempt the online Olympiad from the comfort of home.</p>
+          </div>
+          <div class="tl-step"><span class="tl-dot">4</span>
+            <h4>Get Rewarded</h4>
+            <p>Receive results, certificates, medals &amp; scholarships.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REGISTER ============ -->
+  <section id="register" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Registration</span>
+        <h2>Secure your seat for <span class="gradient-text">₹249</span></h2>
+        <p class="section-lead">One flat fee. Every subject Olympiad. Zero hidden charges. Register in two minutes.</p>
+      </div>
+
+      <div class="register-wrap">
+        <div class="pricing-card reveal">
+          <div class="price-ribbon">Most Popular</div>
+          <h3>All-Access Pass</h3>
+          <div class="price"><span class="price-cur">₹</span><span class="price-amt">249</span><span class="price-per">/
+              registration</span></div>
+          <ul class="price-list">
+            <li>✔ Entry to any subject Olympiad</li>
+            <li>✔ Digital certificate of participation</li>
+            <li>✔ Personalised performance report</li>
+            <li>✔ Sample papers &amp; syllabus access</li>
+            <li>✔ Medals &amp; scholarships for toppers</li>
+            <li>✔ 100% online — attempt from anywhere</li>
+          </ul>
+          <a href="https://wa.me/919905992881?text=Hi%20Omni%20Olympiad!%20I%20want%20to%20get%20the%20All-Access%20Pass%20for%20%E2%82%B9249.%20Please%20share%20the%20registration%20form%20and%20payment%20details."
+            target="_blank" rel="noopener" class="btn btn-primary btn-block">Register on WhatsApp</a>
+          <p class="price-note">Or fill the form → we'll confirm on WhatsApp.</p>
+        </div>
+
+        <div class="reg-form-card reveal">
+          <h3>Quick Registration</h3>
+          <p class="form-hint">Fill this and we'll message you the payment &amp; exam details.</p>
+          <form id="regForm" novalidate>
+            <div class="field"><label for="sName">Student Name</label><input id="sName" name="sName" type="text"
+                placeholder="Full name" required /></div>
+            <div class="field-row">
+              <div class="field"><label for="sClass">Class</label>
+                <select id="sClass" name="sClass" required>
+                  <option value="">Select</option>
+                  <script>for (let i = 1; i <= 12; i++)document.write('<option>Class ' + i + '</option>');</script>
+                </select>
+              </div>
+              <div class="field"><label for="sSubject">Olympiad</label>
+                <select id="sSubject" name="sSubject" required>
+                  <option value="">Select</option>
+                  <option>Mathematics</option>
+                  <option>Science</option>
+                  <option>English</option>
+                  <option>General Knowledge</option>
+                  <option>Mental Ability</option>
+                  <option>Computer &amp; Cyber</option>
+                  <option>Drawing &amp; Art</option>
+                  <option>Spell Bee</option>
+                </select>
+              </div>
+            </div>
+            <div class="field"><label for="sPhone">WhatsApp Number</label><input id="sPhone" name="sPhone" type="tel"
+                placeholder="10-digit mobile" required /></div>
+            <div class="field"><label for="sEmail">Email (optional)</label><input id="sEmail" name="sEmail" type="email"
+                placeholder="you@example.com" /></div>
+            <button type="submit" class="btn btn-primary btn-block">Send via WhatsApp →</button>
+            <p class="form-status" id="formStatus"></p>
+          </form>
+        </div>
+      </div>
+
+      <div class="pay-strip reveal">
+        <div class="pay-item"><span>📱</span>
+          <div><strong>WhatsApp</strong><a
+              href="https://wa.me/919905992881?text=Hi%20Omni%20Olympiad!%20I%20want%20to%20register%20for%20the%20Olympiad."
+              target="_blank" rel="noopener">+91 99059 92881</a></div>
+        </div>
+        <div class="pay-item"><span>✉️</span>
+          <div><strong>Email</strong><a href="mailto:ayushconnection@gmail.com">ayushconnection@gmail.com</a></div>
+        </div>
+        <div class="pay-item"><span>💳</span>
+          <div><strong>Fee</strong><span>₹249 — one time</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESOURCES ============ -->
+  <section id="resources" class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Resources &amp; Syllabus</span>
+        <h2>Everything you need to <span class="gradient-text">prepare</span></h2>
+        <p class="section-lead">Free study material, sample papers and a clear syllabus so you walk in confident.</p>
+      </div>
+
+      <div class="res-grid">
+        <div class="res-card reveal">
+          <div class="res-ico">📄</div>
+          <h3>Sample Papers</h3>
+          <p>Previous-year style papers for every subject and class to practise with.</p>
+        </div>
+        <div class="res-card reveal">
+          <div class="res-ico">📚</div>
+          <h3>Syllabus PDFs</h3>
+          <p>Class-wise, subject-wise syllabus mapped to your school curriculum.</p>
+        </div>
+        <div class="res-card reveal">
+          <div class="res-ico">🎥</div>
+          <h3>Concept Videos</h3>
+          <p>Short, focused videos explaining tricky topics the smart way.</p>
+        </div>
+        <div class="res-card reveal">
+          <div class="res-ico">📝</div>
+          <h3>Mock Tests</h3>
+          <p>Timed mock Olympiads to build speed, accuracy and exam temperament.</p>
+        </div>
+      </div>
+
+      <div class="faq reveal">
+        <h3 class="faq-title">Frequently Asked Questions</h3>
+        <div class="faq-item"><button class="faq-q">Who can participate? <span class="faq-plus">+</span></button>
+          <div class="faq-a">
+            <p>Any student from Class 1 to Class 12 across India can register and participate.</p>
+          </div>
+        </div>
+        <div class="faq-item"><button class="faq-q">What is the registration fee? <span
+              class="faq-plus">+</span></button>
+          <div class="faq-a">
+            <p>A single flat fee of ₹249 covers your registration. There are no hidden charges.</p>
+          </div>
+        </div>
+        <div class="faq-item"><button class="faq-q">How do I register? <span class="faq-plus">+</span></button>
+          <div class="faq-a">
+            <p>Message us on WhatsApp at +91 99059 92881 or use the quick form above. We'll share payment and exam
+              details.</p>
+          </div>
+        </div>
+        <div class="faq-item"><button class="faq-q">Is the Olympiad online or offline? <span
+              class="faq-plus">+</span></button>
+          <div class="faq-a">
+            <p>It is 100% online — you can attempt it from home on any phone, tablet or laptop.</p>
+          </div>
+        </div>
+        <div class="faq-item"><button class="faq-q">Do I get a certificate? <span class="faq-plus">+</span></button>
+          <div class="faq-a">
+            <p>Yes! Every participant receives a digital certificate, and top ranks win medals and scholarships.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Get In Touch</span>
+        <h2>We're here to <span class="gradient-text">help</span></h2>
+        <p class="section-lead">Questions about registration or the Olympiad? Reach out — we usually reply within
+          minutes on WhatsApp.</p>
+      </div>
+
+      <div class="contact-grid">
+        <a href="https://wa.me/919905992881?text=Hi%20Omni%20Olympiad!%20I%20have%20a%20question%20about%20registration."
+          target="_blank" rel="noopener" class="contact-card reveal">
+          <div class="contact-ico" style="--c:#25D366; color: #25D366;">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 01-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.42-8.24 8.42zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.48-1.38-1.73-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z" />
+            </svg>
+          </div>
+          <h3>WhatsApp</h3>
+          <p>+91 99059 92881</p><span class="contact-cta">Chat now →</span>
+        </a>
+        <a href="mailto:ayushconnection@gmail.com" class="contact-card reveal">
+          <div class="contact-ico" style="--c:#EA4335">✉️</div>
+          <h3>Email</h3>
+          <p>ayushconnection@gmail.com</p><span class="contact-cta">Send mail →</span>
+        </a>
+        <div class="contact-card reveal">
+          <div class="contact-ico" style="--c:#2563EB">💰</div>
+          <h3>Registration Fee</h3>
+          <p>₹249 — one-time</p><span class="contact-cta">All subjects included</span>
+        </div>
+      </div>
+
+      <div class="cta-banner reveal">
+        <h2>Ready to compete for <span class="gradient-text">₹249?</span></h2>
+        <p>Join thousands of students already registered for Omni Olympiad 2026.</p>
+        <a href="https://wa.me/919905992881?text=Hi%20Omni%20Olympiad!%20I%20want%20to%20register%20for%20the%20Olympiad%20(%E2%82%B9249)."
+          target="_blank" rel="noopener" class="btn btn-primary btn-lg">Register Now on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.jpg" alt="Omni Olympiad" class="footer-logo" />
+        <span class="brand-text">Omni<span class="brand-accent">Olympiad</span></span>
+        <p>Igniting genius, one Olympiad at a time.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="#home" data-link>Home</a><a href="#about" data-link>About</a>
+        <a href="#olympiads" data-link>Olympiads</a><a href="#register" data-link>Register</a>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="#resources" data-link>Resources</a><a href="#contact" data-link>Contact</a>
+        <a href="mailto:ayushconnection@gmail.com">Email us</a>
+        <a href="https://wa.me/919905992881?text=Hi%20Omni%20Olympiad!%20I%20want%20to%20register." target="_blank"
+          rel="noopener">WhatsApp</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="https://wa.me/919905992881?text=Hi%20Omni%20Olympiad!%20I%20want%20to%20register." target="_blank"
+          rel="noopener">+91 99059 92881</a>
+        <a href="mailto:ayushconnection@gmail.com">ayushconnection@gmail.com</a>
+        <span class="footer-fee">Fee: ₹249</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Omni Olympiad. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating Actions -->
+  <div class="floating-actions">
+    <a href="mailto:ayushconnection@gmail.com" class="email-float" aria-label="Email Us">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+        <path
+          d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+      </svg>
+    </a>
+    <a href="https://wa.me/919905992881?text=Hi%20Omni%20Olympiad!%20I%20want%20to%20register%20for%20the%20Olympiad%20(%E2%82%B9249)."
+      target="_blank" rel="noopener" class="wa-float" aria-label="Register on WhatsApp">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+      </svg>
+    </a>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

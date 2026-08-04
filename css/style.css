@@ -1703,3 +1703,889 @@ section {
     transform: none
   }
 }
+
+/* ============================================================
+   ROYAL FOUNDER TOP BANNER & CRAZY ANIMATION (KING OF OLYMPIAD)
+   ============================================================ */
+.king-founder-top-banner {
+  width: 100%;
+  max-width: var(--maxw);
+  margin: 0 auto 50px;
+  background: 
+    linear-gradient(145deg, rgba(255, 255, 255, 0.98) 0%, rgba(246, 243, 255, 0.95) 50%, rgba(255, 250, 240, 0.96) 100%);
+  border: 2px solid transparent;
+  border-image: linear-gradient(120deg, #F59E0B, #7C3AED, #2563EB, #F59E0B) 1;
+  border-radius: 28px;
+  padding: 40px 48px;
+  display: grid;
+  grid-template-columns: 290px 1fr;
+  gap: 48px;
+  align-items: center;
+  box-shadow: 0 24px 70px rgba(124, 58, 237, 0.16), 0 10px 30px rgba(245, 158, 11, 0.14), inset 0 2px 10px rgba(255, 255, 255, 0.9);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease;
+}
+
+.king-founder-top-banner::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.18) 0%, transparent 70%);
+  filter: blur(40px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.king-founder-top-banner:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 32px 90px rgba(124, 58, 237, 0.24), 0 14px 40px rgba(245, 158, 11, 0.22);
+}
+
+.king-photo-wrap {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.king-photo-frame {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  padding: 6px;
+  background: linear-gradient(135deg, #F59E0B, #7C3AED, #2563EB);
+  box-shadow: 0 16px 45px rgba(37, 99, 235, 0.28), 0 0 25px rgba(245, 158, 11, 0.25);
+  z-index: 5;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.king-photo-frame:hover {
+  transform: scale(1.02);
+  box-shadow: 0 22px 55px rgba(37, 99, 235, 0.35), 0 0 35px rgba(245, 158, 11, 0.35);
+}
+
+.king-photo-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffffff;
+  background: #fff;
+  display: block;
+}
+
+.king-photo-glow {
+  position: absolute;
+  inset: -15px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.4) 0%, transparent 70%);
+  filter: blur(18px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.king-info-wrap {
+  position: relative;
+  z-index: 3;
+}
+
+.king-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.king-pill {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.12), rgba(37, 99, 235, 0.12));
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  font-size: 13px;
+  font-weight: 700;
+  color: #5B21B6;
+}
+
+.king-pill-gold {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.15));
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  font-size: 13px;
+  font-weight: 700;
+  color: #B45309;
+}
+
+.king-title {
+  font-size: clamp(26px, 3.8vw, 42px);
+  font-weight: 800;
+  margin-bottom: 14px;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.gold-gradient {
+  background: linear-gradient(120deg, #F59E0B 0%, #D97706 30%, #7C3AED 70%, #F59E0B 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: shimmerText 4s linear infinite;
+  display: inline-block;
+}
+
+.king-roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.role-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 13px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--line);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.role-tag:hover {
+  transform: translateY(-2px);
+  border-color: #F59E0B;
+}
+
+.king-bio {
+  font-size: 16px;
+  color: var(--body);
+  line-height: 1.6;
+  margin-bottom: 24px;
+  max-width: 680px;
+}
+
+.king-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  transition: transform 0.25s, box-shadow 0.25s, filter 0.25s;
+  text-decoration: none;
+}
+
+.instagram-btn {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  box-shadow: 0 8px 24px rgba(220, 39, 67, 0.35);
+}
+
+.instagram-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 14px 32px rgba(220, 39, 67, 0.55);
+}
+
+.youtube-btn {
+  background: linear-gradient(135deg, #FF0000 0%, #D20000 100%);
+  box-shadow: 0 8px 24px rgba(255, 0, 0, 0.35);
+}
+
+.youtube-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 14px 32px rgba(255, 0, 0, 0.55);
+}
+
+/* ============================================================
+   PRIZE TIER / REWARDS SECTION (CLASS-WISE & SUBJECT-WISE)
+   ============================================================ */
+.section-prizes {
+  position: relative;
+  background: linear-gradient(180deg, var(--bg-soft) 0%, #ffffff 50%, var(--bg-soft) 100%);
+  overflow: hidden;
+}
+
+.prizes-banner-note {
+  max-width: 820px;
+  margin: 0 auto 46px;
+  padding: 18px 28px;
+  background: linear-gradient(135deg, #EFF4FF 0%, #FFF3EA 100%);
+  border: 2px solid rgba(245, 158, 11, 0.4);
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  animation: pulseNavCta 4s ease-in-out infinite;
+}
+
+.prizes-banner-note h4 {
+  font-size: 17px;
+  color: var(--ink);
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.prizes-banner-note p {
+  font-size: 14px;
+  color: var(--body);
+  font-weight: 600;
+}
+
+.podium-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 40px;
+  align-items: stretch;
+}
+
+.podium-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 34px 26px;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  border: 2px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.35s, box-shadow 0.35s, border-color 0.35s;
+}
+
+.podium-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.podium-1st {
+  border-color: #F59E0B;
+  background: linear-gradient(180deg, #FFFBEB 0%, #ffffff 40%);
+  transform: scale(1.05);
+  box-shadow: 0 20px 50px rgba(245, 158, 11, 0.22);
+}
+
+.podium-1st:hover {
+  transform: scale(1.05) translateY(-10px);
+  border-color: #D97706;
+}
+
+.podium-2nd {
+  border-color: #38BDF8;
+  background: linear-gradient(180deg, #F0F9FF 0%, #ffffff 40%);
+}
+
+.podium-3rd {
+  border-color: #A855F7;
+  background: linear-gradient(180deg, #FAF5FF 0%, #ffffff 40%);
+}
+
+.podium-rank-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 14px;
+  margin: 0 auto 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-1st {
+  background: linear-gradient(135deg, #F59E0B, #D97706);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4);
+}
+
+.badge-2nd {
+  background: linear-gradient(135deg, #0284C7, #38BDF8);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
+}
+
+.badge-3rd {
+  background: linear-gradient(135deg, #7C3AED, #A855F7);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(124, 58, 237, 0.35);
+}
+
+.podium-icon {
+  font-size: 52px;
+  margin-bottom: 14px;
+}
+
+.podium-product-wrap {
+  width: 100%;
+  max-width: 250px;
+  height: 165px;
+  margin: 10px auto 16px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.podium-card:hover .podium-product-wrap {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.18);
+}
+
+.podium-product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.section-founder {
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+.podium-prize-title {
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.podium-model {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--blue);
+  margin-bottom: 14px;
+}
+
+.podium-desc {
+  font-size: 14px;
+  color: var(--body);
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+}
+
+.prize-list-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.prize-tier-card {
+  background: #ffffff;
+  border: 1.5px solid var(--line);
+  border-radius: 20px;
+  padding: 26px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.prize-tier-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--blue);
+}
+
+.tier-ico {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  flex-shrink: 0;
+}
+
+.ico-gold { background: #FFFBEB; }
+.ico-silver { background: #F1F5F9; }
+.ico-cert { background: #EFF6FF; }
+
+.tier-content h4 {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.tier-content p {
+  font-size: 14px;
+  color: var(--body);
+  font-weight: 500;
+}
+
+.tier-tag {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+/* ---------- Official Olympiad Terms Box ---------- */
+.olympiad-terms-box {
+  margin-top: 48px;
+  background: #ffffff;
+  border: 1.5px solid var(--line);
+  border-radius: 24px;
+  padding: 36px;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.olympiad-terms-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--grad);
+}
+
+.terms-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.terms-ico {
+  font-size: 28px;
+  background: var(--grad-soft);
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+}
+
+.terms-header h3 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.terms-intro {
+  font-size: 15px;
+  color: var(--body);
+  font-weight: 600;
+  margin-bottom: 28px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.terms-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.term-item {
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 22px;
+  transition: transform 0.25s, border-color 0.25s;
+}
+
+.term-item:hover {
+  transform: translateY(-4px);
+  border-color: var(--blue);
+}
+
+.term-item h4 {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.term-item p {
+  font-size: 14px;
+  color: var(--body);
+  line-height: 1.65;
+}
+
+@media (max-width: 768px) {
+  .terms-grid {
+    grid-template-columns: 1fr;
+  }
+  .olympiad-terms-box {
+    padding: 24px;
+  }
+}
+
+/* ---------- responsive updates for King Banner & Prize Tier ---------- */
+@media (max-width:960px) {
+  .king-founder-top-banner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 34px 24px;
+    gap: 32px;
+  }
+
+  .king-badge-row,
+  .king-roles,
+  .king-socials {
+    justify-content: center;
+  }
+
+  .podium-grid,
+  .prize-list-grid {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .podium-1st {
+    transform: none;
+    order: -1;
+  }
+
+  .podium-1st:hover {
+    transform: translateY(-8px);
+  }
+}
+
+@media (max-width:600px) {
+  .king-title {
+    font-size: 28px;
+  }
+
+  .king-photo-wrap {
+    width: 250px;
+    height: 250px;
+  }
+
+  .king-photo-frame {
+    width: 240px;
+    height: 240px;
+  }
+
+  .king-socials {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .social-btn {
+    justify-content: center;
+  }
+}
+
+/* ============================================================
+   BLOGS & OLYMPIAD KNOWLEDGE HUB (~3,000 WORDS GUIDE)
+   ============================================================ */
+.section-blogs {
+  background: #ffffff;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.blog-nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin: 0 auto 42px;
+}
+
+.blog-nav-btn {
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: 1.5px solid var(--line);
+  background: #f8fafc;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--ink);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.blog-nav-btn:hover,
+.blog-nav-btn.active {
+  background: var(--blue);
+  color: #fff;
+  border-color: var(--blue);
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+}
+
+.blog-articles-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.blog-article-card {
+  background: #ffffff;
+  border: 1.5px solid var(--line);
+  border-radius: 24px;
+  padding: 46px 50px;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.blog-article-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: rgba(37, 99, 235, 0.4);
+}
+
+.blog-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.blog-badge {
+  padding: 4px 14px;
+  border-radius: 999px;
+  background: #EFF6FF;
+  border: 1px solid #BFDBFE;
+  color: #1D4ED8;
+}
+
+.blog-author {
+  color: #B45309;
+  background: #FFFBEB;
+  border: 1px solid #FDE68A;
+  padding: 4px 14px;
+  border-radius: 999px;
+}
+
+.blog-title {
+  font-size: clamp(24px, 3.2vw, 34px);
+  font-weight: 900;
+  color: var(--ink);
+  margin-bottom: 24px;
+  line-height: 1.25;
+}
+
+.blog-content {
+  font-size: 16px;
+  color: var(--body);
+  line-height: 1.85;
+}
+
+.blog-content h3 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--ink);
+  margin: 36px 0 16px;
+  border-left: 4px solid var(--blue);
+  padding-left: 14px;
+}
+
+.blog-content h4 {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--ink);
+  margin: 26px 0 12px;
+}
+
+.blog-content p {
+  margin-bottom: 18px;
+}
+
+.blog-content ul,
+.blog-content ol {
+  margin: 0 0 24px 26px;
+}
+
+.blog-content li {
+  margin-bottom: 10px;
+}
+
+.blog-content strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.blog-table-wrap {
+  overflow-x: auto;
+  margin: 30px 0;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+}
+
+.blog-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  text-align: left;
+}
+
+.blog-table th {
+  background: #F1F5F9;
+  color: var(--ink);
+  font-weight: 800;
+  padding: 14px 18px;
+  border-bottom: 2px solid var(--line);
+}
+
+.blog-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--line);
+  color: var(--body);
+}
+
+.blog-table tr:last-child td {
+  border-bottom: none;
+}
+
+.blog-tip-box {
+  background: linear-gradient(135deg, #EFF6FF 0%, #F8FAFC 100%);
+  border: 1.5px solid #BFDBFE;
+  border-left: 6px solid #2563EB;
+  border-radius: 16px;
+  padding: 24px 28px;
+  margin: 30px 0;
+}
+
+.blog-tip-box h5 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #1E40AF;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.blog-tip-box p {
+  margin-bottom: 0;
+  font-size: 15px;
+  color: #1E293B;
+}
+
+@media (max-width: 600px) {
+  .blog-article-card {
+    padding: 30px 20px;
+  }
+}
+
+/* ============================================================
+   STANDALONE BLOGS PAGE HERO & STYLING
+   ============================================================ */
+.blog-page-hero {
+  padding: 140px 0 60px;
+  background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-page-hero .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.blog-page-hero h1 {
+  font-size: clamp(32px, 5vw, 54px);
+  font-weight: 900;
+  line-height: 1.15;
+  color: var(--ink);
+  max-width: 800px;
+  margin: 0 auto 16px;
+}
+
+.blog-page-hero .section-lead {
+  max-width: 720px;
+  margin: 0 auto 36px;
+  font-size: 18px;
+  color: var(--slate);
+  line-height: 1.6;
+}
+
+.blog-cta-box {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  border-radius: 28px;
+  padding: 50px 40px;
+  text-align: center;
+  color: #fff;
+  margin: 60px 0 20px;
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.25);
+}
+
+.blog-cta-box h3 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.blog-cta-box p {
+  font-size: 17px;
+  color: #dbeafe;
+  max-width: 600px;
+  margin: 0 auto 28px;
+}
+
+.blog-cta-box .btn-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  color: #1e3a8a;
+  font-weight: 800;
+  font-size: 16px;
+  padding: 16px 36px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.blog-cta-box .btn-white:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  background: #f8fafc;
+}

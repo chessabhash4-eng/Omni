@@ -145,6 +145,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ---------- King Founder Banner photo fallback ---------- */
+  const ownerPhotoImg = document.getElementById('ownerPhotoImg');
+  if (ownerPhotoImg) {
+    ownerPhotoImg.addEventListener('error', () => {
+      if (typeof OWNER_PHOTO_BASE64 !== 'undefined' && ownerPhotoImg.src !== OWNER_PHOTO_BASE64) {
+        ownerPhotoImg.src = OWNER_PHOTO_BASE64;
+      }
+    });
+  }
+
+  /* ---------- King Founder Banner stable display ---------- */
+  const kingBanner = document.getElementById('kingFounderBanner');
+  // Kept stable without 3D tilt as requested
+
   /* ---------- registration form -> WhatsApp ---------- */
   const form = document.getElementById('regForm');
   const status = document.getElementById('formStatus');
@@ -187,3 +201,4 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
